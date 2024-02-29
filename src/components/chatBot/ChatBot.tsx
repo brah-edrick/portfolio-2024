@@ -57,7 +57,7 @@ const GetInTouchPrompt: Prompt = {
 const HiringPrompt: Prompt = {
     label: "We want to hire you!",
     botResponse: {
-        botChat: [<>Wow! I'm flattered! <Emoji>❤️</Emoji></>, "I'm currently employed but always open to networking!", "Let's connect on LinkedIn?"],
+        botChat: [<>Wow! I’m flattered! <Emoji>❤️</Emoji></>, "I'm currently employed but always open to networking!", "Let's connect on LinkedIn?"],
         prompts: [{
             label: "Ok!",
             href: 'https://www.linkedin.com/in/blhedrick/'

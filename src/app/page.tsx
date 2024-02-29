@@ -100,7 +100,7 @@ export default function Home() {
               Projects
             </MobileNavElement>
             <MobileNavElement isSelected={selectedSection === 'sup'} href="#" onClick={(e) => { e.preventDefault(); setChatBotIsOpen(true); setSelectedSection('sup') }}>
-              'Sup?
+              ’Sup?
             </MobileNavElement>
           </ul>
         </nav>
@@ -128,7 +128,7 @@ export default function Home() {
                   Projects
                 </NavElement>
                 <NavElement isSelected={selectedSection === 'sup'} href="#" onClick={(e) => { e.preventDefault(); setChatBotIsOpen(true); setSelectedSection('sup'); }}>
-                  'Sup?
+                  ’Sup?
                 </NavElement>
               </ul>
             </nav>
@@ -139,7 +139,7 @@ export default function Home() {
           <section ref={aboutRef} id='about' className="snap-top scroll-my-24 min-h-screen relative">
             <div className="lg:p-4 lg:pt-0">
               <Paragraph>
-                Over the past <Bold>10 years</Bold>, I've worked in various areas of digital design and development, including <Bold>front-end development, API and fullstack</Bold> projects as well as <Bold>UI/UX design</Bold>. I consider myself a bit of a chameleon.
+                Over the past <Bold>10 years</Bold>, I’ve worked in various areas of digital design and development, including <Bold>front-end development, API and fullstack</Bold> projects as well as <Bold>UI/UX design</Bold>. I consider myself a bit of a chameleon.
               </Paragraph>
               <Paragraph>
                 At <a href="https://www.redoxengine.com/" target="blank"><Bold>Redox</Bold></a>, I’m part of a team of exceptional engineers with a goal of making the world’s healthcare data useful. I’ve been lucky to work on many types of challenging projects ranging from <Bold>static sites to complex single page apps</Bold> and in many business domains from medical, travel, utilities, documentation and more.
@@ -170,7 +170,7 @@ export default function Home() {
               <H3 className="mb-2">August 2014 - May 2018</H3>
               <H2>Senior Front End Developer at <a href="https://www.accenture.com/us-en/about/accenture-song-index" target='blank' >Accenture Song</a></H2>
               <div className="mt-8"><Paragraph>
-                I started off my career building lots of static template for consumption in CMS. Primarily built in <Bold>Jade/Pug, Sass and jQuery</Bold> I worked closely with members of the design team at <Bold>Fjord</Bold>, to deliver delightful experiences. It is during this early stage in my career I learned about and strong implemented <Bold>Brad Frost's atomic design</Bold>. I saw the power of how atomic design could be used to have common language between designers and developers as well as how it changes the way you think about building pages.
+                I started off my career building lots of static template for consumption in CMS. Primarily built in <Bold>Jade/Pug, Sass and jQuery</Bold> I worked closely with members of the design team at <Bold>Fjord</Bold>, to deliver delightful experiences. It is during this early stage in my career I learned about and strong implemented <Bold>Brad Frost’s atomic design</Bold>. I saw the power of how atomic design could be used to have common language between designers and developers as well as how it changes the way you think about building pages.
               </Paragraph>
                 <Paragraph>
                   As I progressed in my career, and as web technology marched onward, I began to learn about and work with <Bold>AngularJS and React</Bold>. After building several projects with both I realized the power of these frameworks and how they made building stateful applications trivial. I never really looked back.
@@ -199,7 +199,7 @@ export default function Home() {
                 </Paragraph>
                 <Paragraph>
                   Some notable fun things about this project:
-                  <ul className="pl-4 list-disc flex flex-col gap-2 leading-snug py-2"><li>This was my first full-sized project using Tailwind. It's a lot of fun and very intuitive.</li> <li>There are lots of fun scroll effects and triggers using intersection observer and framer motion</li><li>I used <pre className="inline">mix-blend-mode</pre> to achieve the dark and light mode effect.</li><li>I implemented a polymorphic component in Typescript</li></ul>
+                  <ul className="pl-4 list-disc flex flex-col gap-2 leading-snug py-2"><li>This was my first full-sized project using Tailwind. It’s a lot of fun and very intuitive.</li> <li>There are lots of fun scroll effects and triggers using intersection observer and framer motion</li><li>I used <pre className="inline">mix-blend-mode</pre> to achieve the dark and light mode effect.</li><li>I implemented a polymorphic component in Typescript</li></ul>
                 </Paragraph>
               </div>
               <ul className="flex gap-2 flex-wrap mt-8"><SkillPill>React</SkillPill><SkillPill>Typescript</SkillPill><SkillPill>NextJS</SkillPill><SkillPill>Tailwind CSS</SkillPill><SkillPill>Framer Motion</SkillPill><SkillPill>Vercel</SkillPill></ul>
