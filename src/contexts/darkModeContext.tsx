@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useState, useCallback, PropsWithChildren } from "react";
-import { getPrefersDark } from "@/utils/getPrefersDark";
+import React, { useState, useCallback, PropsWithChildren, useEffect } from "react";
+import { useGetPrefersDark } from "@/hooks/useGetPrefersDark";
 
 // create a React context for dark mode
 export const DarkModeContext = React.createContext<{
@@ -17,10 +17,17 @@ DarkModeContext.displayName = "DarkModeContext";
 export const DarkModeProvider: React.FC<PropsWithChildren> = ({
     children
 }) => {
-    const [isDark, setIsDark] = useState(getPrefersDark());
+    const prefersDark = useGetPrefersDark();
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        setIsDark(prefersDark);
+    }, [prefersDark]);
+
     const toggle = useCallback(() => {
         setIsDark(prevState => !prevState);
     }, []);
+
     return <DarkModeContext.Provider value={{
         isDark,
         toggle

@@ -20,7 +20,6 @@ import { InvertOnLightMode } from "@/components/InvertOnLightMode";
 import Image from "next/image";
 
 
-
 export default function Home() {
   const { isDark, toggle } = useDarkMode();
   const [isChatBotOpen, setChatBotIsOpen] = useState(false);
@@ -199,8 +198,8 @@ export default function Home() {
                 </Paragraph>
                 <Paragraph>
                   Some notable fun things about this project:
-                  <ul className="pl-4 list-disc flex flex-col gap-2 leading-snug py-2"><li>This was my first full-sized project using Tailwind. It’s a lot of fun and very intuitive.</li> <li>There are lots of fun scroll effects and triggers using intersection observer and framer motion</li><li>I used <pre className="inline">mix-blend-mode</pre> to achieve the dark and light mode effect.</li><li>I implemented a polymorphic component in Typescript</li></ul>
                 </Paragraph>
+                <ul className="text-sm pl-4 list-disc flex flex-col gap-2 leading-snug py-2"><li>This was my first full-sized project using Tailwind. It’s a lot of fun and very intuitive.</li> <li>There are lots of fun scroll effects and triggers using intersection observer and framer motion</li><li>I used <pre className="inline">mix-blend-mode</pre> to achieve the dark and light mode effect.</li><li>I implemented a polymorphic component in Typescript</li></ul>
               </div>
               <ul className="flex gap-2 flex-wrap mt-8"><SkillPill>React</SkillPill><SkillPill>Typescript</SkillPill><SkillPill>NextJS</SkillPill><SkillPill>Tailwind CSS</SkillPill><SkillPill>Framer Motion</SkillPill><SkillPill>Vercel</SkillPill></ul>
 

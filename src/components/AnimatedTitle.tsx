@@ -1,26 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
 export const name = "Brandon Hedrick";
 export const shortName = "brah.dev";
 
-const scrollTarget = window.innerHeight / 4
+
+
 
 export const AnimatedTitle = () => {
     const [short, setShort] = useState(false);
     const [scrollAmt, setScrollAmt] = useState(0);
     const { scrollY } = useScroll();
 
+    const [scrollTarget, setScrollTarget] = React.useState<number | undefined>();
+
+    useEffect(() => {
+        if (window) {
+            setScrollTarget(window.innerHeight / 4);
+        }
+    }, []);
+
     useMotionValueEvent(scrollY, "change", (latest) => {
-        if (!short && latest > scrollTarget) {
+        if (!short && scrollTarget && latest > scrollTarget) {
             setShort(true);
         }
-        if (short && latest <= scrollTarget || latest < scrollAmt) {
+        if (short && scrollTarget && latest <= scrollTarget || latest < scrollAmt) {
             setShort(false);
         }
         setScrollAmt(latest);
     });
     const formattedName = short ? shortName : name;
+
+    if (!scrollTarget) return null;
+
     return <h1 className="font-bold text-xl text-yellow-400">
         <AnimatePresence mode="popLayout">
             <motion.span
