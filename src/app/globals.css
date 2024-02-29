@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #FFF;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--foreground);
+  background-image: url('/noise.svg');
+  background-size: 40%;
+  background-color: rgba(13, 13, 13, 1);
+}
+
+a {
+  text-decoration: underline;
+}
+
+#fun-arc {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+}
+
+#fun-arc:after {
+  content: '';
+  display: block;
+  height: 200vw;
+  width: 200vw;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: -150vw;
+  opacity: .03;
+  right: -100vw;
+}
+
+#dark-light-toggle-screen {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: background-color 250ms ease-in-out;
+  z-index: 100;
+}
+
+#dark-light-toggle-screen.dark {
+  background-color: black;
+}
+
+#dark-light-toggle-screen.light {
+  background-color: white;
+}
