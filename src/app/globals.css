@@ -22,7 +22,7 @@ a {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   pointer-events: none;
   z-index: -1;
 }
@@ -50,7 +50,6 @@ a {
   left: 0;
   mix-blend-mode: difference;
   pointer-events: none;
-  transition: background-color 250ms ease-in-out;
   z-index: 100;
 }
 
