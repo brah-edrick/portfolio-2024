@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedTitle, name, shortName } from "@/components/AnimatedTitle";
+import { AnimatedTitle, name } from "@/components/AnimatedTitle";
 import { MobileNavElement } from "@/components/NavElement";
 import { useDarkMode } from "@/contexts/darkModeContext";
 import { smoothScrollToRef } from "@/utils/smoothScrollToRef";
@@ -24,8 +24,6 @@ import {
 import {
   AnimatePresence,
   motion,
-  useMotionValueEvent,
-  useScroll,
 } from "framer-motion";
 import { InvertOnLightMode } from "@/components/InvertOnLightMode";
 import Image from "next/image";
