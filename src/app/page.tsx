@@ -21,10 +21,7 @@ import {
   faMoon,
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  AnimatePresence,
-  motion,
-} from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { InvertOnLightMode } from "@/components/InvertOnLightMode";
 import Image from "next/image";
 
@@ -176,7 +173,7 @@ export default function Home() {
                     src="/me.png"
                     width={200}
                     height={200}
-                    className="mb-4 saturate-0"
+                    className="mb-4 saturate-100 "
                   />
                 </InvertOnLightMode>
               </div>
@@ -208,22 +205,31 @@ export default function Home() {
                 a chameleon.
               </Paragraph>
               <Paragraph>
-                At{" "}
-                <a href="https://www.redoxengine.com/" target="blank">
-                  <Bold>Redox</Bold>
-                </a>
-                , I’m part of a team of exceptional engineers with a goal of
-                making the world’s healthcare data useful. I’ve been lucky to
-                work on many types of challenging projects ranging from{" "}
-                <Bold>static sites to complex single page apps</Bold> and in
-                many business domains from medical, travel, utilities,
-                documentation and more.
+                I’ve been lucky to work on many types of challenging projects
+                ranging from{" "}
+                <Bold>
+                  static sites, complex single page apps and extensive APIs
+                </Bold>{" "}
+                and in many business domains from medical, travel, utilities,
+                marketing and developer documentation (just to name a few).
               </Paragraph>
               <Paragraph>
                 When I’m not at my computer, I’m enjoying the great outdoors
                 where you can find me{" "}
                 <Bold>sailing, trail running, paddling, hiking</Bold> or just
                 taking my dog, Cooper, on a walk through the jungles of O’ahu.
+              </Paragraph>
+              <Paragraph className="text-yellow-200 -mx-4 p-4 bg-yellow-200/5 rounded-lg">
+                I&apos;m currently looking for a <Bold>new challenge</Bold> and
+                I&apos;m open to a <Bold>new location</Bold> as well! If you
+                have something interesting,{" "}
+                <span
+                  className="underline cursor-pointer"
+                  onClick={() => setChatBotIsOpen(true)}
+                >
+                  please reach out
+                </span>
+                !
               </Paragraph>
             </div>
           </section>
@@ -235,7 +241,7 @@ export default function Home() {
           >
             <h2 className="text-3xl lg:m-4 my-4 font-bold">Career</h2>
             <div className="bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all mb-16">
-              <H4 className="mb-1">May 2018 - Present</H4>
+              <H4 className="mb-1">May 2018 - October 2025</H4>
               <H3>
                 Senior Fullstack Engineer at{" "}
                 <a href="https://www.redoxengine.com/" target="_blank">
@@ -271,9 +277,13 @@ export default function Home() {
                   <Bold>
                     React, Gatsby, Typescript and a headless CMS, Contentful
                   </Bold>
-                  . This choice was essential to allowing our content team to
-                  easily add, remove and reorder content, pages and navigation
-                  while keeping the presentation separated from the content.
+                  . This set of technologies was essential to allowing our
+                  content team to easily add, remove and reorder content, pages
+                  and navigation while keeping the presentation separated from
+                  the content. Delivering a custom implementation meant that the
+                  dedicated team could avoid the limitations of a third party
+                  solution. (Please note that this site is not optimized for
+                  mobile devices)
                 </Paragraph>
                 <Paragraph>
                   Redox’s core offering is an API customers and our application
@@ -362,8 +372,77 @@ export default function Home() {
             id="projects"
           >
             <h2 className="text-3xl lg:m-4 my-4 font-bold ">Projects</h2>
-
-            <div className="group bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all mb-8">
+            <article className="group bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all mb-8">
+              <div
+                className={`grid grid-rows-1 grid-cols-1 w-full rounded-lg mb-4 overflow-clip border border-yellow-200 border-opacity-25`}
+              >
+                <InvertOnLightMode
+                  className="brightness-75 group-hover:brightness-100 transition-all"
+                  as="div"
+                >
+                  <Image
+                    alt="Redox Documentation"
+                    src="/redox-documentation.png"
+                    width={1600}
+                    height={900}
+                  />
+                </InvertOnLightMode>
+              </div>
+              <a
+                className="flex items-center underline text-yellow-400"
+                href="https://docs.redoxengine.com/"
+                target="_blank"
+              >
+                <H3>Redox Documentation</H3>
+                <FontAwesomeIcon
+                  className="ml-1 opacity-40"
+                  size="xs"
+                  icon={faArrowUpRightFromSquare}
+                />
+              </a>
+              <div className="mt-8">
+                <Paragraph>
+                  This is a project I worked on at <Bold>Redox</Bold>. It&apos;s
+                  a comprehensive documentation site for the Redox API usage,
+                  contracts and general user documentation.
+                </Paragraph>
+                <Paragraph>
+                  This project had some really interesting engineering
+                  challenges as the dedicated documentation team wanted a way to
+                  manage the content in one location and share in several
+                  different contexts. In addition to this, they wanted to easily
+                  add, remove and reorder content, pages and navigation all
+                  while keeping the presentation separated from the content. We
+                  also wanted to be able to deliver some UX that would be
+                  statically rendered from API contract definitions that the
+                  engineering team maintained but still allow these pages to be
+                  reordered and supplemented with additional content from the
+                  documentation team. Finally everything needed to be searchable
+                  and easily navigable. Unfortunately, Docusaraus didn&apos;t
+                  exist at the time (it also can&apos;t do everything we needed)
+                  so we had to forge our own solution.
+                </Paragraph>
+                <Paragraph>
+                  To address these challenges we decided to use{" "}
+                  <Bold>React, Gatsby, Typescript</Bold> and a{" "}
+                  <Bold>headless CMS, Contentful</Bold> to deliver the site.
+                  This set of technologies was essential to allowing our content
+                  team to easily add, remove and reorder content, pages and
+                  navigation while keeping the presentation separated from the
+                  content. Delivering a custom implementation meant that the
+                  dedicated team could avoid the limitations of a third party
+                  solution and the engineering team could deliver highly custom
+                  UX that was tailored to the needs of the documentation team.
+                  Search was implemented using a client side Flexsearch plugin
+                  and custom indexing logic that allowed a page to be indexed by
+                  it&apos;s title and content author controlled tags/keywords.
+                  (Please note that this site is not optimized for mobile
+                  devices and also this project has been out of my custody for
+                  some time so the experience may have changed)
+                </Paragraph>
+              </div>
+            </article>
+            <article className="group bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all mb-8">
               <div
                 className={`grid grid-rows-1 grid-cols-1 w-full rounded-lg mb-4 overflow-clip border border-yellow-200 border-opacity-25`}
               >
@@ -379,13 +458,26 @@ export default function Home() {
                   />
                 </InvertOnLightMode>
               </div>
-              <H3>2024 Portfolio Website</H3>
+              <a
+                className="flex items-center underline text-yellow-400"
+                href="https://github.com/brah-edrick/portfolio-2024 "
+                target="_blank"
+              >
+                <H3>2024 Portfolio Website</H3>
+                <FontAwesomeIcon
+                  className="ml-1 opacity-40"
+                  size="xs"
+                  icon={faArrowUpRightFromSquare}
+                />
+              </a>
               <div className="mt-8">
                 <Paragraph>
                   This website! I created my new portfolio website fresh for
-                  2024. I wanted to focus on building something minimal but
-                  still pleasant to interact with. Responsiveness and fluidity
-                  were top of mind for this project.
+                  2024 (and refreshed in 2025). I wanted to focus on building
+                  something minimal but still pleasant to interact with.
+                  Responsiveness and fluidity were top of mind for this project
+                  since I believe in a mobile first approach and a great
+                  experience on all devices.
                 </Paragraph>
                 <Paragraph>
                   I began by researching and making note of other websites I
@@ -400,7 +492,7 @@ export default function Home() {
                 </Paragraph>
                 <ul className="text-sm pl-4 list-disc flex flex-col gap-2 leading-snug py-2">
                   <li>
-                    This was my first full-sized project using Tailwind. It’s a
+                    This was my first non-trivial project using Tailwind. It’s a
                     lot of fun and very intuitive.
                   </li>{" "}
                   <li>
@@ -411,8 +503,21 @@ export default function Home() {
                     I used <pre className="inline">mix-blend-mode</pre> to
                     achieve the dark and light mode effect.
                   </li>
-                  <li>I implemented a polymorphic component in Typescript</li>
+                  <li>
+                    I implemented a polymorphic component in Typescript (a first
+                    for me)
+                  </li>
                 </ul>
+                <Paragraph>
+                  You should check out the{" "}
+                  <a
+                    href="https://github.com/brah-edrick/portfolio-2024"
+                    target="_blank"
+                  >
+                    source code
+                  </a>{" "}
+                  on Github and see how it was built!
+                </Paragraph>
               </div>
               <ul className="flex gap-2 flex-wrap mt-8">
                 <SkillPill>React</SkillPill>
@@ -422,8 +527,8 @@ export default function Home() {
                 <SkillPill>Framer Motion</SkillPill>
                 <SkillPill>Vercel</SkillPill>
               </ul>
-            </div>
-            <div className=" group bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all">
+            </article>
+            <article className=" group bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all">
               <div
                 className={`grid grid-rows-1 grid-cols-1 w-full rounded-lg mb-4 overflow-clip border border-yellow-200 border-opacity-25`}
               >
@@ -459,6 +564,16 @@ export default function Home() {
                   bauhaus design. I love bauhaus posters and wanted to create
                   something to generate them randomly.{" "}
                 </Paragraph>
+                <Paragraph>
+                  You should check out the{" "}
+                  <a
+                    href="https://github.com/brah-edrick/bauhaus-funhaus"
+                    target="_blank"
+                  >
+                    source code
+                  </a>{" "}
+                  on Github and see how it was built!
+                </Paragraph>
               </div>
               <ul className="flex gap-2 flex-wrap mt-8">
                 <SkillPill>React</SkillPill>
@@ -466,14 +581,14 @@ export default function Home() {
                 <SkillPill>Vite</SkillPill>
                 <SkillPill>Framer Motion</SkillPill>
               </ul>
-            </div>
+            </article>
           </section>
 
           <section className="p-4 -mx-4 lg:mx-0">
-            <Paragraph>
-              Crafted with Aloha in Honolulu, HI.{" "}
-              <Emoji label="rainbow">🌈</Emoji> Written by hand with Tailwind,
-              NextJS and designed in Figma.
+            <Paragraph className="-mx-4 p-4 bg-yellow-200/5 rounded-lg">
+              Crafted with <Bold>Aloha</Bold> in <Bold>Honolulu, HI</Bold>.{" "}
+              <Emoji label="rainbow">🌈</Emoji> Written by hand with{" "}
+              <Bold>Tailwind, NextJS</Bold> and designed in <Bold>Figma</Bold>.
             </Paragraph>
           </section>
         </div>

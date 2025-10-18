@@ -21,7 +21,7 @@ const FreelancePrompt: Prompt = {
   label: "Do you do freelance work?",
   botResponse: {
     botChat: [
-      "Presently, no. But I'm always interested in volunteering my help to projects with a good cause.",
+      "Yes, I'm open to that! I'm always interested in volunteering my help to projects with a good cause.",
       "Let's connect?",
     ],
     prompts: [
@@ -67,7 +67,7 @@ const HiringPrompt: Prompt = {
       <>
         Wow! I’m flattered! <Emoji>❤️</Emoji>
       </>,
-      "I'm currently employed but always open to networking!",
+      "I'm currently looking for a job! How serendipitous?!",
       "Let's connect on LinkedIn?",
     ],
     prompts: [
@@ -86,13 +86,13 @@ const CVPrompt: Prompt = {
   label: "Do you have a CV?",
   botResponse: {
     botChat: [
-      "I happen to have a copy right here... somewhere",
+      "I happen to have a copy right here...somewhere",
       "Ahh here it is!",
     ],
     prompts: [
       {
         label: "Take a look",
-        href: "/test.pdf",
+        href: "/cv.pdf",
       },
       {
         label: "Nevermind",
@@ -112,7 +112,8 @@ const LoopChat: React.ReactNode[] = ["Anything else you'd like to know?"];
 const InitialPrompts: Prompt[] = [
   FreelancePrompt,
   HiringPrompt,
-  GetInTouchPrompt /** CVPrompt */,
+  GetInTouchPrompt,
+  CVPrompt,
 ];
 
 const container = {
