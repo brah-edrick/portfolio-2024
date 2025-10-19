@@ -4,7 +4,6 @@ import { AnimatedTitle, name } from "@/components/AnimatedTitle";
 import { MobileNavElement } from "@/components/NavElement";
 import { useDarkMode } from "@/contexts/darkModeContext";
 import { smoothScrollToRef } from "@/utils/smoothScrollToRef";
-import { useRefIsScrolledBy } from "@/hooks/useRefIsScrolledBy";
 import { SocialsNav } from "@/components/SocialsNav";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { H3, H4 } from "@/components/typography/Headings";
@@ -221,8 +220,8 @@ export default function Home() {
               </Paragraph>
               <Paragraph className="text-yellow-200 -mx-4 p-4 bg-yellow-200/5 rounded-lg">
                 I&apos;m currently looking for a <Bold>new challenge</Bold> and
-                I&apos;m open to a <Bold>new location</Bold> as well! If you
-                have something interesting,{" "}
+                I&apos;m open to a <Bold>new location</Bold> as well! If
+                you&apos;re interested in working together,{" "}
                 <span
                   className="underline cursor-pointer"
                   onClick={() => setChatBotIsOpen(true)}
@@ -305,7 +304,6 @@ export default function Home() {
                 <SkillPill>Docker</SkillPill>
                 <SkillPill>Contentful</SkillPill>
                 <SkillPill>Component Libraries</SkillPill>
-                <SkillPill>Jest</SkillPill>
                 <SkillPill>CSS Modules</SkillPill>
                 <SkillPill>Netlify</SkillPill>
               </ul>
@@ -381,6 +379,84 @@ export default function Home() {
                   as="div"
                 >
                   <Image
+                    alt="Financial Simulations Visualizer"
+                    src="/financial-simulations.png"
+                    width={1600}
+                    height={900}
+                  />
+                </InvertOnLightMode>
+              </div>
+              <a
+                className="flex items-center underline text-yellow-400"
+                href="https://brah-edrick.github.io/finance-simulations/#/retirement"
+                target="_blank"
+              >
+                <H3>Financial Simulations Visualizer</H3>
+                <FontAwesomeIcon
+                  className="ml-1 opacity-40"
+                  size="xs"
+                  icon={faArrowUpRightFromSquare}
+                />
+              </a>
+              <div className="mt-8">
+                <Paragraph>
+                  A client-side financial planning application built with{" "}
+                  <Bold>React</Bold>,<Bold>TypeScript</Bold>,{" "}
+                  <Bold>Tremor</Bold> and modern web technologies. This project
+                  provides four specialized calculators to help users explore
+                  different aspects of financial planning and retirement
+                  scenarios
+                </Paragraph>
+                <Paragraph>
+                  From an design perspective, this project presented unique
+                  challenges in balancing presenting <Bold>useful data</Bold>{" "}
+                  with an experience that <Bold>would not overwhelm</Bold>{" "}
+                  users. users. Financial calculations can be intimidating and
+                  mundane, so I focused on creating an interface that was
+                  pleasant, approachable and used default values that were
+                  relatable and showed how possible financial independence can
+                  be through small contributions over a long period of time.
+                </Paragraph>
+
+                <Paragraph>
+                  Interactive charts and forms provide{" "}
+                  <Bold>immediate feedback</Bold>, helping users understand the
+                  impact of their inputs in real-time and subtle debouncing
+                  ensures that the experience is{" "}
+                  <Bold>smooth and reactive</Bold> without thrashing on user
+                  inputs. The entire experience is designed to build confidence
+                  in users who might be intimidated by financial planning.
+                </Paragraph>
+                <Paragraph>
+                  I&apos;d encourage you to check out the{" "}
+                  <a
+                    href="https://github.com/brah-edrick/financial-simulations"
+                    target="_blank"
+                  >
+                    source code on Github
+                  </a>
+                </Paragraph>
+                <ul className="flex gap-2 flex-wrap mt-8">
+                  <SkillPill>React</SkillPill>
+                  <SkillPill>Typescript</SkillPill>
+                  <SkillPill>UI/UX Design</SkillPill>
+                  <SkillPill>Data Visualization</SkillPill>
+                  <SkillPill>Tremor</SkillPill>
+                  <SkillPill>Vite</SkillPill>
+                  <SkillPill>Github</SkillPill>
+                  <SkillPill>Tailwind</SkillPill>
+                </ul>
+              </div>
+            </article>
+            <article className="group bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all mb-8">
+              <div
+                className={`grid grid-rows-1 grid-cols-1 w-full rounded-lg mb-4 overflow-clip border border-yellow-200 border-opacity-25`}
+              >
+                <InvertOnLightMode
+                  className="brightness-75 group-hover:brightness-100 transition-all"
+                  as="div"
+                >
+                  <Image
                     alt="Redox Documentation"
                     src="/redox-documentation.png"
                     width={1600}
@@ -440,6 +516,17 @@ export default function Home() {
                   devices and also this project has been out of my custody for
                   some time so the experience may have changed)
                 </Paragraph>
+                <ul className="flex gap-2 flex-wrap mt-8">
+                  <SkillPill>React</SkillPill>
+                  <SkillPill>Typescript</SkillPill>
+                  <SkillPill>Gatsby</SkillPill>
+                  <SkillPill>Github</SkillPill>
+                  <SkillPill>Jest</SkillPill>
+                  <SkillPill>Contentful</SkillPill>
+                  <SkillPill>Component Libraries</SkillPill>
+                  <SkillPill>CSS Modules</SkillPill>
+                  <SkillPill>Netlify</SkillPill>
+                </ul>
               </div>
             </article>
             <article className="group bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all mb-8">
@@ -480,12 +567,33 @@ export default function Home() {
                   experience on all devices.
                 </Paragraph>
                 <Paragraph>
-                  I began by researching and making note of other websites I
-                  liked and what I liked about them. I then began to sketch out
-                  wireframes and later moving on to Figma to create a high
-                  fidelity mockup. I then began to build the site using{" "}
+                  The design process began with{" "}
+                  <Bold>extensive research and competitive analysis</Bold> -
+                  studying other portfolios I admired and identifying what made
+                  them effective. I then moved to{" "}
+                  <Bold>wireframing and user flow mapping</Bold>, thinking
+                  through how visitors would navigate and consume information.
+                  This engineering mindset of considering user journeys early in
+                  the process informed every design decision.
+                </Paragraph>
+                <Paragraph>
+                  In Figma, I created high-fidelity mockups that balanced{" "}
+                  <Bold>aesthetic appeal with functional clarity</Bold>. The
+                  design emphasizes readability, clear information hierarchy,
+                  and smooth interactions. I paid particular attention to{" "}
+                  <Bold>micro-interactions and transitions</Bold> - the subtle
+                  animations that make the experience feel polished and
+                  responsive. The dark/light mode implementation using{" "}
+                  <code className="inline">mix-blend-mode</code> was both a
+                  technical challenge and a UX consideration, ensuring the
+                  experience remains consistent across user preferences.
+                </Paragraph>
+                <Paragraph>
+                  Built using{" "}
                   <Bold>React, Typescript, NextJS and Tailwind CSS</Bold> and
-                  deployed it on <Bold>Vercel</Bold>.
+                  deployed on <Bold>Vercel</Bold>, the technical implementation
+                  directly supports the design goals through performance
+                  optimization and accessibility features.
                 </Paragraph>
                 <Paragraph>
                   Some notable fun things about this project:
@@ -500,7 +608,7 @@ export default function Home() {
                     intersection observer and framer motion
                   </li>
                   <li>
-                    I used <pre className="inline">mix-blend-mode</pre> to
+                    I used <code className="inline">mix-blend-mode</code> to
                     achieve the dark and light mode effect.
                   </li>
                   <li>
@@ -525,6 +633,9 @@ export default function Home() {
                 <SkillPill>NextJS</SkillPill>
                 <SkillPill>Tailwind CSS</SkillPill>
                 <SkillPill>Framer Motion</SkillPill>
+                <SkillPill>UI/UX Design</SkillPill>
+                <SkillPill>Figma</SkillPill>
+                <SkillPill>Responsive Design</SkillPill>
                 <SkillPill>Vercel</SkillPill>
               </ul>
             </article>
