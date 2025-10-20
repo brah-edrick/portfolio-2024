@@ -6,12 +6,16 @@ interface ChatFrameProps {
   isOpen: boolean;
   close: Dispatch<SetStateAction<boolean>>;
   children?: ReactNode;
+  title?: string;
+  subtitle?: string;
 }
 
 export const ChatFrame: React.FC<ChatFrameProps> = ({
   children,
   isOpen,
   close,
+  title = "Brah Bot",
+  subtitle = "Ask me a question",
 }) => {
   return (
     <div
@@ -21,8 +25,8 @@ export const ChatFrame: React.FC<ChatFrameProps> = ({
     >
       <div className="rounded-t-lg text-slate-50  border-b border-yellow-400  py-2 px-4 flex justify-between bg-yellow-100 backdrop-blur-md bg-opacity-15">
         <div className="flex flex-col text-sm">
-          <span className="font-semibold">Brah Bot</span>
-          <span className="font-light">Ask me a question</span>
+          <span className="font-semibold">{title}</span>
+          <span className="font-light">{subtitle}</span>
         </div>
         <button onClick={(e) => close(false)}>
           <FontAwesomeIcon color="white" icon={faClose}></FontAwesomeIcon>

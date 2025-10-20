@@ -1,9 +1,9 @@
 import React, { Dispatch, SetStateAction, useRef } from "react";
 import { Emoji } from "../typography/Emoji";
-import { ChatFrame } from "./ChatFrame";
-import { BotText } from "./BotText";
-import { Prompt } from "./Prompt";
-import { UserText } from "./UserText";
+import { ChatFrame } from "../molecules/ChatFrame";
+import { BotText } from "../atoms/BotText";
+import { Prompt } from "../atoms/Prompt";
+import { UserText } from "../atoms/UserText";
 import { v4 as uuid } from "uuid"; // Import the 'uuid' package
 import { AnimatePresence, motion } from "framer-motion";
 
