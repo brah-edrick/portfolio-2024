@@ -236,7 +236,7 @@ export default function Home() {
             <H2 className="text-3xl lg:m-4 my-4 font-bold">Career</H2>
             <CareerEntry
               period="May 2018 - October 2025"
-              title="Senior/Staff Fullstack Engineer"
+              title="Senior/Staff Full Stack Engineer"
               company="Redox"
               companyUrl="https://www.redoxengine.com/"
               bodyContent={
