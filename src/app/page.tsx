@@ -188,7 +188,7 @@ export default function Home() {
                 areas of digital design and development, including{" "}
                 <Bold>front-end development, API and fullstack</Bold> projects
                 as well as <Bold>UI/UX design</Bold>. I consider myself a bit of
-                a chameleon. I'm in my element when I'm working closely with
+                a chameleon. I’m in my element when I’m working closely with
                 designers and developers to{" "}
                 <Bold>
                   deliver experiences that are efficient, effective and
@@ -213,8 +213,8 @@ export default function Home() {
               </Paragraph>
               <Callout>
                 <Paragraph color="yellow">
-                  I'm currently looking for a <Bold>new challenge</Bold> and I'm
-                  open to a <Bold>new location</Bold> as well! If you're
+                  I’m currently looking for a <Bold>new challenge</Bold> and I’m
+                  open to a <Bold>new location</Bold> as well! If you’re
                   interested in working together,{" "}
                   <span
                     className="underline cursor-pointer"
@@ -246,7 +246,7 @@ export default function Home() {
                     <Bold>
                       transition from AngularJS to React and TypeScript
                     </Bold>{" "}
-                    for Redox's core web experience, a{" "}
+                    for Redox’s core web experience, a{" "}
                     <a
                       href="https://dashboard.redoxengine.com/#/login"
                       target="_blank"
@@ -282,7 +282,7 @@ export default function Home() {
                     this site is not optimized for mobile devices)
                   </Paragraph>
                   <Paragraph>
-                    Redox's core offering is an API customers, internal
+                    Redox’s core offering is an API customers, internal
                     stakeholders and our applications use to interact with the
                     Redox platform. I would frequently create new features,
                     revise old features or strengthen the security of these{" "}
@@ -320,7 +320,7 @@ export default function Home() {
                     <Bold>Jade/Pug, Sass and jQuery</Bold>. It was during this
                     early stage in my career that I learned about and was
                     strongly influenced by{" "}
-                    <Bold>Brad Frost's Atomic Design</Bold>. I saw the power of
+                    <Bold>Brad Frost’s Atomic Design</Bold>. I saw the power of
                     how Atomic Design could be used to have common terminology
                     between designers and developers. It permanently changed the
                     way I think about building pages, applications and systems.
@@ -409,7 +409,7 @@ export default function Home() {
                     planning.
                   </Paragraph>
                   <Paragraph>
-                    I'd encourage you to check out the{" "}
+                    I’d encourage you to check out the{" "}
                     <a
                       href="https://github.com/brah-edrick/financial-simulations"
                       target="_blank"
@@ -438,7 +438,7 @@ export default function Home() {
               bodyContent={
                 <>
                   <Paragraph>
-                    This is a project I worked on at <Bold>Redox</Bold>. It's a
+                    This is a project I worked on at <Bold>Redox</Bold>. It’s a
                     comprehensive documentation site for the Redox API usage,
                     contracts and general user documentation.
                   </Paragraph>
@@ -455,7 +455,7 @@ export default function Home() {
                     pages to be reordered and supplemented with additional
                     content from the documentation team. Finally everything
                     needed to be searchable and easily navigable. Unfortunately,
-                    Docusaurus didn't exist at the time (it also can't do
+                    Docusaurus didn’t exist at the time (it also can’t do
                     everything we needed) so we had to forge our own solution.
                   </Paragraph>
                   <Paragraph>
