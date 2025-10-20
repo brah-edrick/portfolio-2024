@@ -167,7 +167,7 @@ export default function Home() {
           imageSrc="/me.png"
           imageAlt="Brandon Hedrick"
           title={<AnimatedTitle as="h1">Brandon Hedrick</AnimatedTitle>}
-          subtitle="Fullstack Engineer and Technologist"
+          subtitle="Full Stack Engineer and Technologist"
           mainTitle={
             <>
               Full Stack. <br />
@@ -186,7 +186,7 @@ export default function Home() {
               <Paragraph>
                 Over the past <Bold>10 years</Bold>, I’ve worked in various
                 areas of digital design and development, including{" "}
-                <Bold>front-end development, API and fullstack</Bold> projects
+                <Bold>front-end development, API and full stack</Bold> projects
                 as well as <Bold>UI/UX design</Bold>. I consider myself a bit of
                 a chameleon. I’m in my element when I’m working closely with
                 designers and developers to{" "}
@@ -200,7 +200,7 @@ export default function Home() {
                 I’ve been lucky to work on many types of challenging projects
                 ranging from{" "}
                 <Bold>
-                  static sites, complex single page apps and extensive APIs
+                  static sites, complex single-page apps and extensive APIs
                 </Bold>{" "}
                 and in many business domains from medical, travel, utilities,
                 marketing and developer documentation (just to name a few).
@@ -282,7 +282,7 @@ export default function Home() {
                     this site is not optimized for mobile devices)
                   </Paragraph>
                   <Paragraph>
-                    Redox’s core offering is an API customers, internal
+                    Redox’s core offering is an API that customers, internal
                     stakeholders and our applications use to interact with the
                     Redox platform. I would frequently create new features,
                     revise old features or strengthen the security of these{" "}
@@ -393,10 +393,9 @@ export default function Home() {
                     with an experience that <Bold>would not overwhelm</Bold>{" "}
                     users. Financial calculations can be intimidating and
                     mundane, so I focused on creating an interface that was
-                    pleasant, approachable. Also, I used default values that
-                    were relatable and showed how possible financial
-                    independence can be through small contributions over a long
-                    period of time.
+                    pleasant, approachable. I used default values that were
+                    relatable and showed how possible financial independence can
+                    be through small contributions over a long period of time.
                   </Paragraph>
                   <Paragraph>
                     Interactive charts and forms provide{" "}
@@ -470,7 +469,7 @@ export default function Home() {
                     limitations of a third party solution and the engineering
                     team could deliver highly custom UX that was tailored to the
                     needs of the documentation team. Search was implemented
-                    using a client side FlexSearch plugin and custom indexing
+                    using a client-side FlexSearch plugin and custom indexing
                     logic that allowed a page to be indexed by its title and
                     author-controlled tags/keywords. (Please note that this site
                     is not optimized for mobile devices and also this project
@@ -503,7 +502,7 @@ export default function Home() {
                     2024 (and refreshed in 2025). I wanted to focus on building
                     something minimal but still pleasant to interact with.
                     Responsiveness and fluidity were top of mind for this
-                    project since I believe in a mobile first approach and a
+                    project since I believe in a mobile-first approach and a
                     great experience on all devices.
                   </Paragraph>
                   <Paragraph>
