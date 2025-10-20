@@ -182,7 +182,7 @@ export default function Home() {
               </h2>
               <h3 className="text-4xl font-bold leading-normal my-6">
                 Full Stack. <br />
-                Full Power. <InvertOnLightMode as="span">💪🏼</InvertOnLightMode>
+                Full Sails. <InvertOnLightMode as="span">⛵️</InvertOnLightMode>
               </h3>
             </div>
 
@@ -201,7 +201,13 @@ export default function Home() {
                 areas of digital design and development, including{" "}
                 <Bold>front-end development, API and fullstack</Bold> projects
                 as well as <Bold>UI/UX design</Bold>. I consider myself a bit of
-                a chameleon.
+                a chameleon. I'm in my element when I'm working closely with
+                designers and developers to{" "}
+                <Bold>
+                  deliver experiences that are efficient, effective and
+                  delightful
+                </Bold>
+                .
               </Paragraph>
               <Paragraph>
                 I’ve been lucky to work on many types of challenging projects
@@ -219,9 +225,9 @@ export default function Home() {
                 taking my dog, Cooper, on a walk through the jungles of O’ahu.
               </Paragraph>
               <Paragraph className="text-yellow-200 -mx-4 p-4 bg-yellow-200/5 rounded-lg">
-                I&apos;m currently looking for a <Bold>new challenge</Bold> and
-                I&apos;m open to a <Bold>new location</Bold> as well! If
-                you&apos;re interested in working together,{" "}
+                I’m currently looking for a <Bold>new challenge</Bold> and I’m
+                open to a <Bold>new location</Bold> as well! If you’re
+                interested in working together,{" "}
                 <span
                   className="underline cursor-pointer"
                   onClick={() => setChatBotIsOpen(true)}
@@ -242,7 +248,7 @@ export default function Home() {
             <div className="bg-yellow-200/5 rounded-lg p-4 -mx-4 lg:mx-0 bg:bg-yellow-200/0 transition-all mb-16">
               <H4 className="mb-1">May 2018 - October 2025</H4>
               <H3>
-                Senior Fullstack Engineer at{" "}
+                Senior/Staff Fullstack Engineer at{" "}
                 <a href="https://www.redoxengine.com/" target="_blank">
                   Redox
                 </a>
@@ -250,7 +256,7 @@ export default function Home() {
               <div className="mt-8">
                 <Paragraph>
                   I was initially hired to architect a{" "}
-                  <Bold>transition from AngularJS to React and Typescript</Bold>{" "}
+                  <Bold>transition from AngularJS to React and TypeScript</Bold>{" "}
                   for Redox’s core web experience, a{" "}
                   <a
                     href="https://dashboard.redoxengine.com/#/login"
@@ -259,22 +265,23 @@ export default function Home() {
                     <Bold>customer dashboard SPA</Bold>
                   </a>
                   . I led this effort while simultaneously normalizing code and
-                  design patterns and establishing front end best practices.
-                  From there I became the foremost expert on front end
+                  design patterns and establishing front-end best practices.
+                  From there I became the foremost expert on front-end
                   architecture at Redox and continued to deliver new features
-                  and collaborate closely with our newly minted design team.
+                  and collaborate closely with our newly formed design team.
                 </Paragraph>
                 <Paragraph>
-                  Another major project I headed at Redox was the launch of our{" "}
+                  Another major project I headed at Redox was the development
+                  and launch of our{" "}
                   <a href="https://docs.redoxengine.com/" target="_blank">
                     <Bold>documentation website</Bold>
                   </a>
                   , which is paramount to delivering key information to
-                  customers on how to self serve and troubleshoot as well as
-                  detailed examples of how to best use the Redox API.This
+                  customers on how to self-serve and troubleshoot as well as
+                  detailed examples of how to best use the Redox API. This
                   project was architected using{" "}
                   <Bold>
-                    React, Gatsby, Typescript and a headless CMS, Contentful
+                    React, Gatsby, TypeScript and a headless CMS, Contentful
                   </Bold>
                   . This set of technologies was essential to allowing our
                   content team to easily add, remove and reorder content, pages
@@ -285,15 +292,16 @@ export default function Home() {
                   mobile devices)
                 </Paragraph>
                 <Paragraph>
-                  Redox’s core offering is an API customers and our application
-                  use. I frequently would create new features, revise old
-                  features or strengthen the security of these{" "}
+                  Redox’s core offering is an API customers, internal
+                  stakeholders and our applications use to interact with the
+                  Redox platform. I would frequently create new features, revise
+                  old features or strengthen the security of these{" "}
                   <Bold>APIs written in Node.</Bold>
                 </Paragraph>
               </div>
               <ul className="flex gap-2 flex-wrap mt-8">
                 <SkillPill>React</SkillPill>
-                <SkillPill>Typescript</SkillPill>
+                <SkillPill>TypeScript</SkillPill>
                 <SkillPill>Node</SkillPill>
                 <SkillPill>Express</SkillPill>
                 <SkillPill>K8s</SkillPill>
@@ -321,30 +329,39 @@ export default function Home() {
               </H3>
               <div className="mt-8">
                 <Paragraph>
-                  I started off my career building lots of static template for
-                  consumption in CMS. Primarily built in{" "}
-                  <Bold>Jade/Pug, Sass and jQuery</Bold> I worked closely with
-                  members of the design team at <Bold>Fjord</Bold>, to deliver
-                  delightful experiences. It is during this early stage in my
-                  career I learned about and was strongly influenced by{" "}
-                  <Bold>Brad Frost’s atomic design</Bold>. I saw the power of
-                  how atomic design could be used to have common language
-                  between designers and developers as well as how it changes the
-                  way you think about building pages.
+                  I started off my career building lots of static templates for
+                  consumption in CMS contexts and primarily built using{" "}
+                  <Bold>Jade/Pug, Sass and jQuery</Bold>. It was during this
+                  early stage in my career thatI learned about and was strongly
+                  influenced by <Bold>Brad Frost’s Atomic Design</Bold>. I saw
+                  the power of how Atomic Design could be used to have common
+                  terminology between designers and developers. It permanently
+                  changed the way I think about building pages, applications and
+                  systems.
                 </Paragraph>
+
+                <Paragraph>
+                  I worked closely with members of the design team at{" "}
+                  <Bold>Fjord, Chaotic Moon</Bold> and other agencies, to
+                  deliver delightful experiences. It was during this time that I
+                  learned to manage tradeoffs between what designers wanted and
+                  what was technically feasible or within the budget and
+                  timeline of the project.
+                </Paragraph>
+
                 <Paragraph>
                   As I progressed in my career, and as web technology marched
                   onward, I began to learn about and work with{" "}
                   <Bold>AngularJS and React</Bold>. After building several
                   projects with both I realized the power of these frameworks
-                  and how they made building stateful applications trivial. I
-                  never really looked back.
+                  and how I could harness their power to build even more
+                  powerful and effective experiences.
                 </Paragraph>
                 <Paragraph>
                   In my time at Accenture I worked on projects ranging from
                   smaller local company sites to Fortune 500 marketing and sales
-                  sites. I had a broad range of exposures to clients, many types
-                  of problems and industries
+                  sites. I had a broad range of exposure to clients, many types
+                  of problems and industries.
                 </Paragraph>
               </div>
               <ul className="flex gap-2 flex-wrap mt-8">
@@ -358,7 +375,7 @@ export default function Home() {
                 <SkillPill>AngularJS</SkillPill>
                 <SkillPill>Angular</SkillPill>
                 <SkillPill>RxJS</SkillPill>
-                <SkillPill>Typescript</SkillPill>
+                <SkillPill>TypeScript</SkillPill>
                 <SkillPill>Github</SkillPill>
                 <SkillPill>SVN</SkillPill>
               </ul>
@@ -408,14 +425,14 @@ export default function Home() {
                   scenarios
                 </Paragraph>
                 <Paragraph>
-                  From an design perspective, this project presented unique
+                  From a design perspective, this project presented unique
                   challenges in balancing presenting <Bold>useful data</Bold>{" "}
                   with an experience that <Bold>would not overwhelm</Bold>{" "}
-                  users. users. Financial calculations can be intimidating and
-                  mundane, so I focused on creating an interface that was
-                  pleasant, approachable and used default values that were
-                  relatable and showed how possible financial independence can
-                  be through small contributions over a long period of time.
+                  users. Financial calculations can be intimidating and mundane,
+                  so I focused on creating an interface that was pleasant,
+                  approachable. Also, I used default values that were relatable
+                  and showed how possible financial independence can be through
+                  small contributions over a long period of time.
                 </Paragraph>
 
                 <Paragraph>
@@ -428,7 +445,7 @@ export default function Home() {
                   in users who might be intimidated by financial planning.
                 </Paragraph>
                 <Paragraph>
-                  I&apos;d encourage you to check out the{" "}
+                  I’d encourage you to check out the{" "}
                   <a
                     href="https://github.com/brah-edrick/financial-simulations"
                     target="_blank"
@@ -438,7 +455,7 @@ export default function Home() {
                 </Paragraph>
                 <ul className="flex gap-2 flex-wrap mt-8">
                   <SkillPill>React</SkillPill>
-                  <SkillPill>Typescript</SkillPill>
+                  <SkillPill>TypeScript</SkillPill>
                   <SkillPill>UI/UX Design</SkillPill>
                   <SkillPill>Data Visualization</SkillPill>
                   <SkillPill>Tremor</SkillPill>
@@ -478,8 +495,8 @@ export default function Home() {
               </a>
               <div className="mt-8">
                 <Paragraph>
-                  This is a project I worked on at <Bold>Redox</Bold>. It&apos;s
-                  a comprehensive documentation site for the Redox API usage,
+                  This is a project I worked on at <Bold>Redox</Bold>. It’s a
+                  comprehensive documentation site for the Redox API usage,
                   contracts and general user documentation.
                 </Paragraph>
                 <Paragraph>
@@ -494,13 +511,13 @@ export default function Home() {
                   engineering team maintained but still allow these pages to be
                   reordered and supplemented with additional content from the
                   documentation team. Finally everything needed to be searchable
-                  and easily navigable. Unfortunately, Docusaraus didn&apos;t
-                  exist at the time (it also can&apos;t do everything we needed)
-                  so we had to forge our own solution.
+                  and easily navigable. Unfortunately, Docusaurus didn’t exist
+                  at the time (it also can’t do everything we needed) so we had
+                  to forge our own solution.
                 </Paragraph>
                 <Paragraph>
                   To address these challenges we decided to use{" "}
-                  <Bold>React, Gatsby, Typescript</Bold> and a{" "}
+                  <Bold>React, Gatsby, TypeScript</Bold> and a{" "}
                   <Bold>headless CMS, Contentful</Bold> to deliver the site.
                   This set of technologies was essential to allowing our content
                   team to easily add, remove and reorder content, pages and
@@ -509,16 +526,16 @@ export default function Home() {
                   dedicated team could avoid the limitations of a third party
                   solution and the engineering team could deliver highly custom
                   UX that was tailored to the needs of the documentation team.
-                  Search was implemented using a client side Flexsearch plugin
+                  Search was implemented using a client side FlexSearch plugin
                   and custom indexing logic that allowed a page to be indexed by
-                  it&apos;s title and content author controlled tags/keywords.
-                  (Please note that this site is not optimized for mobile
-                  devices and also this project has been out of my custody for
-                  some time so the experience may have changed)
+                  its title and author-controlled tags/keywords. (Please note
+                  that this site is not optimized for mobile devices and also
+                  this project has been out of my custody for some time so the
+                  experience may have changed)
                 </Paragraph>
                 <ul className="flex gap-2 flex-wrap mt-8">
                   <SkillPill>React</SkillPill>
-                  <SkillPill>Typescript</SkillPill>
+                  <SkillPill>TypeScript</SkillPill>
                   <SkillPill>Gatsby</SkillPill>
                   <SkillPill>Github</SkillPill>
                   <SkillPill>Jest</SkillPill>
@@ -568,7 +585,7 @@ export default function Home() {
                 </Paragraph>
                 <Paragraph>
                   The design process began with{" "}
-                  <Bold>extensive research and competitive analysis</Bold> -
+                  <Bold>market research and competitive analysis</Bold> -
                   studying other portfolios I admired and identifying what made
                   them effective. I then moved to{" "}
                   <Bold>wireframing and user flow mapping</Bold>, thinking
@@ -582,40 +599,19 @@ export default function Home() {
                   design emphasizes readability, clear information hierarchy,
                   and smooth interactions. I paid particular attention to{" "}
                   <Bold>micro-interactions and transitions</Bold> - the subtle
-                  animations that make the experience feel polished and
-                  responsive. The dark/light mode implementation using{" "}
-                  <code className="inline">mix-blend-mode</code> was both a
-                  technical challenge and a UX consideration, ensuring the
-                  experience remains consistent across user preferences.
+                  animations that make the experience feel polished and fun. The
+                  dark/light mode implementation using{" "}
+                  <code className="inline">mix-blend-mode</code> was an elegant
+                  solution to a common UX consideration.
                 </Paragraph>
                 <Paragraph>
                   Built using{" "}
-                  <Bold>React, Typescript, NextJS and Tailwind CSS</Bold> and
+                  <Bold>React, TypeScript, NextJS and Tailwind CSS</Bold> and
                   deployed on <Bold>Vercel</Bold>, the technical implementation
-                  directly supports the design goals through performance
-                  optimization and accessibility features.
+                  directly supports the design goals and my original composition
+                  decisions with few deviations.
                 </Paragraph>
-                <Paragraph>
-                  Some notable fun things about this project:
-                </Paragraph>
-                <ul className="text-sm pl-4 list-disc flex flex-col gap-2 leading-snug py-2">
-                  <li>
-                    This was my first non-trivial project using Tailwind. It’s a
-                    lot of fun and very intuitive.
-                  </li>{" "}
-                  <li>
-                    There are lots of fun scroll effects and triggers using
-                    intersection observer and framer motion
-                  </li>
-                  <li>
-                    I used <code className="inline">mix-blend-mode</code> to
-                    achieve the dark and light mode effect.
-                  </li>
-                  <li>
-                    I implemented a polymorphic component in Typescript (a first
-                    for me)
-                  </li>
-                </ul>
+
                 <Paragraph>
                   You should check out the{" "}
                   <a
@@ -629,7 +625,7 @@ export default function Home() {
               </div>
               <ul className="flex gap-2 flex-wrap mt-8">
                 <SkillPill>React</SkillPill>
-                <SkillPill>Typescript</SkillPill>
+                <SkillPill>TypeScript</SkillPill>
                 <SkillPill>NextJS</SkillPill>
                 <SkillPill>Tailwind CSS</SkillPill>
                 <SkillPill>Framer Motion</SkillPill>
@@ -672,8 +668,9 @@ export default function Home() {
                 <Paragraph>
                   Just a fun one-day project I whipped up with Vite, React and
                   Framer Motion to make something fun, colorful and inspired by
-                  bauhaus design. I love bauhaus posters and wanted to create
-                  something to generate them randomly.{" "}
+                  Bauhaus design. I love Bauhaus shapes and motifs and wanted to
+                  create some simple code to generate tiling patterns with them
+                  randomly.{" "}
                 </Paragraph>
                 <Paragraph>
                   You should check out the{" "}
@@ -688,7 +685,7 @@ export default function Home() {
               </div>
               <ul className="flex gap-2 flex-wrap mt-8">
                 <SkillPill>React</SkillPill>
-                <SkillPill>Typescript</SkillPill>
+                <SkillPill>TypeScript</SkillPill>
                 <SkillPill>Vite</SkillPill>
                 <SkillPill>Framer Motion</SkillPill>
               </ul>
