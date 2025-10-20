@@ -213,8 +213,8 @@ export default function Home() {
               </Paragraph>
               <Callout>
                 <Paragraph color="yellow" marginBottom="mb-0">
-                  I'm currently looking for a <Bold>new challenge</Bold> and I'm
-                  open to a <Bold>new location</Bold> as well! If you're
+                  I’m currently looking for a <Bold>new challenge</Bold> and am
+                  open to a <Bold>new location</Bold> as well! If you’re
                   interested in working together,{" "}
                   <span
                     className="underline cursor-pointer"
