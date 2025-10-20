@@ -212,9 +212,9 @@ export default function Home() {
                 taking my dog, Cooper, on a walk through the jungles of O’ahu.
               </Paragraph>
               <Callout>
-                <Paragraph color="yellow" className="mb-0">
-                  I’m currently looking for a <Bold>new challenge</Bold> and I’m
-                  open to a <Bold>new location</Bold> as well! If you’re
+                <Paragraph color="yellow" marginBottom="mb-0">
+                  I'm currently looking for a <Bold>new challenge</Bold> and I'm
+                  open to a <Bold>new location</Bold> as well! If you're
                   interested in working together,{" "}
                   <span
                     className="underline cursor-pointer"
@@ -590,7 +590,7 @@ export default function Home() {
 
           <section className="p-4 -mx-4 lg:mx-0">
             <Callout>
-              <Paragraph className="mb-0">
+              <Paragraph marginBottom="mb-0">
                 Crafted with <Bold>Aloha</Bold> in <Bold>Honolulu, HI</Bold>.{" "}
                 <Emoji label="rainbow">🌈</Emoji> Written by hand with{" "}
                 <Bold>Tailwind, NextJS</Bold> and designed in <Bold>Figma</Bold>
