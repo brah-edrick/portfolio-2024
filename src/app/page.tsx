@@ -373,6 +373,78 @@ export default function Home() {
           >
             <H2 className="text-3xl lg:m-4 my-4 font-bold">Projects</H2>
             <ProjectArticle
+              title="Sailing Logbook"
+              href="https://sailing-logbook.vercel.app/"
+              imageSrc="/sailing-logbook.png"
+              imageAlt="Sailing Logbook"
+              bodyContent={
+                <>
+                  <Paragraph>
+                    A NextJS app built with the goal of being a simple and
+                    elegant digital logbook to track my sailing adventures, this
+                    project allowed me to illustrate my skills in building a
+                    simple full stack application with a modern technology and
+                    practices.
+                  </Paragraph>
+                  <Paragraph>
+                    The project is designed with two major user personas in
+                    mind: viewers and logbook keepers (aka me). The design of
+                    the app allows for anyone to view the logbook, but only
+                    logbook keepers can add, edit or delete entries. In order to
+                    attain this behavior, I implemented authentication and
+                    authorization to protect API routes and conditionally
+                    renders components based on the user’s role.
+                  </Paragraph>
+                  <Paragraph>
+                    The app is primarily built with Chakra UI components and
+                    where the form heavy pages exists (logbook entry and edit
+                    pages), I used React Hook Form to handle the form state and
+                    validation. All the data is validated using a shared Zod
+                    schema on both the client and server side to guarantee
+                    consistency.
+                  </Paragraph>
+                  <Paragraph>
+                    The data is stored in a NeonDB database on Vercel and is
+                    accessed using Prisma as the ORM layer. The GET endpoints
+                    all support pagination and sorting which you can see if you
+                    visit the activities page in particular. All components and
+                    routes are tested using Jest and React Testing Library to
+                    ensure the app is robust and reliable. The app is deployed
+                    on Vercel and the source code is available on Github. You
+                    can check out the app{" "}
+                    <a
+                      href="https://sailing-logbook.vercel.app/"
+                      target="_blank"
+                    >
+                      here
+                    </a>{" "}
+                    and the source code{" "}
+                    <a
+                      href="https://github.com/brah-edrick/sailing-logbook"
+                      target="_blank"
+                    >
+                      here
+                    </a>
+                    .
+                  </Paragraph>
+                </>
+              }
+              skills={[
+                "NextJS",
+                "TypeScript",
+                "Chakra UI",
+                "React Hook Form",
+                "Vercel",
+                "Zod",
+                "Authentication",
+                "Session",
+                "API Routes",
+                "NeonDB",
+                "Jest",
+                "React Testing Library",
+              ]}
+            />
+            <ProjectArticle
               title="Financial Simulations Visualizer"
               href="https://brah-edrick.github.io/finance-simulations/#/retirement"
               imageSrc="/financial-simulations.png"
